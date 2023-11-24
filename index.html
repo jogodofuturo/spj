@@ -1,16 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no,viewport-fit=cover"/><meta name=" theme-color" content="#16202d"/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><script defer="defer" src="/static/rpx-d66766299759aa67d40284be6c4603ae/js/main.7d9da68c.js"></script><link href="/static/rpx-d66766299759aa67d40284be6c4603ae/css/main.70a2604b.css" rel="stylesheet"><!-- JaJogo 7RE7NUMZ --><link rel="icon" href="/static/cdnimg/v4/FA285A7E46DE921FB3B4CA91FAC80B9A@64x64.png" />   <link rel="apple-touch-icon" href="/static/cdnimg/v4/FA285A7E46DE921FB3B4CA91FAC80B9A.png">
-    <link rel="manifest" id="manifest" href="/manifest.json"/>    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="/static/cdnimg/v4/FA285A7E46DE921FB3B4CA91FAC80B9A.png">
-    <meta name="twitter:image:src" content="/static/cdnimg/v4/FA285A7E46DE921FB3B4CA91FAC80B9A.png">
-    <title>JAJOGO | Cassino Online, jogue jogos de cassino e ganhe prêmios em dinheiro real</title>
-    <meta property="og:title" content="JAJOGO | Cassino Online, jogue jogos de cassino e ganhe prêmios em dinheiro real">
-    <meta name="twitter:title" content="JAJOGO | Cassino Online, jogue jogos de cassino e ganhe prêmios em dinheiro real">
-    <meta property="og:description"
-        content="JAJOGO Bet | Cassino Online, jogue jogos de cassino e ganhe prêmios em dinheiro real">
-    <meta name="twitter:description"
-        content="JAJOGO Bet | Cassino Online, jogue jogos de cassino e ganhe prêmios em dinheiro real">
-    <meta
-        name="description"
-        content="JAJOGO Bet | Cassino Online, jogue jogos de cassino e ganhe prêmios em dinheiro real"
-      /><script>window._imv='v4';window._config={"icon":"/static/cdnimg/v4/FA285A7E46DE921FB3B4CA91FAC80B9A@256x256","pcIcon":"/static/cdnimg/v4/C76FE5945CC4BDCC0B702001991F09C5@400x400","wssCdnRoot":"wss://aws4.rescdns.com/tj22","countryList":[{"name":"Brasil","id":"BR"}],"countryId":"BR"};</script><script>window.__serverTimeSpan=1700481583206-new Date().getTime();window.__serverTime=function(){return new Date().getTime() + window.__serverTimeSpan; }; window.__appPageVersion="1700054030"</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>document.documentElement.addEventListener("touchstart",(function(t){t.touches.length>1&&t.preventDefault()}),!1);var lastTouchEnd=0;document.documentElement.addEventListener("touchend",(function(t){var e=Date.now();e-lastTouchEnd<=300&&t.preventDefault(),lastTouchEnd=e}),!1)</script></body></html>
+<head>
+  
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/d8f4d1d9c1.js"></script>
+  <meta charset="utf-8" />
+  <title>Finalizar compra</title>
+  <base href="/" />
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script src="https://api.hopysplit.com.br/v1/js"></script>
+
+<link rel="stylesheet" href="styles.css"></head>
+
+<body>
+  <script>
+    if (global === undefined) {
+      var global = window;
+    }
+  </script>
+  <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+  <script src="https://assets.pagseguro.com.br/checkout-sdk-js/rc/dist/browser/pagseguro.min.js"></script>
+  <app-root>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #fff;
+        overflow: hidden;
+        font-family: Ubuntu, sans-serif;
+        color: #000;
+      }
+
+      #hopy-loader {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+      }
+
+      #hopy-loader div.hopy-loader-inside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #hopy-loader div.loader-wrapper {
+        position: relative;
+        height: 110px;
+        width: 110px;
+      }
+
+      #hopy-loader div.loader-around {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 5px solid #eee;
+        border-top: 5px solid #aaa;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: rotate 2s linear infinite;
+      }
+
+      #hopy-loader .loader-icon-wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #hopy-loader .loader-icon-wrapper svg {
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+
+      #hopy-loader .loader-info-text {
+        position: relative;
+        padding-top: 30px;
+        color: rgb(54, 62, 68);
+        font-size: 16px;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <div id="hopy-loader">
+      <div class="hopy-loader-inside">
+        <div class="loader-wrapper">
+          <div class="loader-around"></div>
+          <div class="loader-icon-wrapper">
+            <svg fill="#eee" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M18 10v-4c0-3.313-2.687-6-6-6s-6 2.687-6 6v4h-3v14h18v-14h-3zm-5 7.723v2.277h-2v-2.277c-.595-.347-1-.984-1-1.723 0-1.104.896-2 2-2s2 .896 2 2c0 .738-.404 1.376-1 1.723zm-5-7.723v-4c0-2.206 1.794-4 4-4 2.205 0 4 1.794 4 4v4h-8z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <p class="loader-info-text">Conectando em ambiente seguro...</p>
+      </div>
+    </div>
+
+  </app-root>
+
+  <script src="/assets/scripts/tenant-util.js"></script>
+
+  <script>
+    var host = window.location.hostname
+
+    console.log("loaded index")
+
+    if (host === "localhost") {
+      host = "nexuscheckout.com.br"
+    }
+
+    var queryParams = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    
+    var queryParamsHost = queryParams._h ?? queryParams.h
+
+    if (queryParamsHost) {
+
+      if (queryParamsHost.includes("?")) {
+        var paramsSplit = queryParamsHost.split("?")
+        queryParamsHost = paramsSplit[0]
+
+        var otherParams = paramsSplit[1]
+
+        if (otherParams) {
+          window.location.search = '_h=' + queryParamsHost + '&' + otherParams;
+        }
+      }
+
+      host = atob(queryParamsHost)
+    }
+
+    startTenant(host)
+
+  </script>
+
+<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="main.js" defer></script></body>
+
+</html>
